@@ -1,0 +1,98 @@
+
+
+.header {
+    padding: 40px; 
+    margin: 80px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.main {
+   width: 70%;
+   max-width: 960px;
+   margin: 20px auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-basis: auto;
+    gap: 80px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+
+.button1 {
+    flex: 1 auto;
+    background-color: #930824;
+    padding: 20px 20px;
+    border-radius: 1in;
+    border: 1.5px solid black;
+}
+
+
+.button2 {
+    flex: 1 auto;
+    background-color: rgb(22, 22, 177);
+    padding: 20px 20px;
+    border-radius: 1in;
+    border: 1.5px solid black;
+    }
+
+
+table {
+   width: 100%;     
+}
+   td {
+    border:1px solid black;
+    padding-right: 30px;
+    padding-left: 10px
+   } 
+   td.box1{
+    background-color: rgb(22, 22, 177);
+    width: 10%;
+   }
+   td.box2 {
+    background-color: rgb(93, 142, 222);
+    width: 10%;
+   }
+   td.box3 {
+    background-color: rgb(130, 200, 165);
+    width: 10%;
+   }
+   td.box4 {
+    background-color: rgb(245, 152, 167);
+    width: 10%;
+   }
+   td.box5 {
+    background-color:  rgb(120, 5, 24);
+    width: 10%;
+   }
+
+
+
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+.footer {
+    padding: 5px; 
+    margin: 80px;
+    text-align: left; 
+    background: #ddd; 
+  }
