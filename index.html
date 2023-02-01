@@ -11,8 +11,24 @@
     </div>
     <div class="main">
     <div class="buttons">
-        <div class="button1">COUPLE</div>
-        <div class="button2">GROUP</div>
+        <!--A button to open the popup form-->
+        <button class="couples-button" onclick="openForm()">COUPLE</button>
+        <!--the form-->
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+        
+                <label for="person1"><b>Your personality type</b></label>
+                <input type="text" placeholder="Ex: INFP" name="type" required>
+            
+                <label for="person2"><b>Matches personality type</b></label>
+                <input type="text" placeholder="Ex: INFP" name="type" required>
+            
+                <button type="submit" class="btn">Submit</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+        </div>
+
+        <button class="group-button" onclick="openForm()">GROUP</button>
     </div>
     <br>
     <br>

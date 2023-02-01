@@ -2,10 +2,9 @@
 
 .header {
     padding: 40px; 
-    margin: 80px;
+    margin: 50px;
     text-align: center;
-    background: black;
-    color: white;
+    color: black;
 }
 
 .header h1 {
@@ -22,32 +21,87 @@
     display: flex;
     flex-direction: row
     flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-basis: auto;
-    gap: 80px;
-    font-size: 18px;
+   justify-content: center;
+    gap: 20px;
+    font-size: 16px;
     text-align: center;
+}
+
+/* Button used to open couples form */
+.couples-button {
+    flex: 1 auto;
+    max-width: 100px;
+    background-color: #930824;
+    padding: 10px 10px;
+    border: 1.5px solid black;
+    cursor: pointer;
     color: white;
 }
 
-
-.button1 {
+/* Button used to open group form */
+.group-button {
     flex: 1 auto;
-    background-color: #930824;
-    padding: 20px 20px;
-    border-radius: 1in;
+    max-width: 100px;
+    background-color: rgb(93, 142, 222);
+    padding: 10px 21px;
     border: 1.5px solid black;
-}
-
-
-.button2 {
-    flex: 1 auto;
-    background-color: rgb(22, 22, 177);
-    padding: 20px 20px;
-    border-radius: 1in;
-    border: 1.5px solid black;
+    cursor: pointer;
+    color: black;
     }
 
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 200px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  /* Input fields */
+.form-container input[type=text], .form-container input[type=text] {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: rgb(130, 200, 165);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: #930824;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
 
 table {
    width: 100%;     

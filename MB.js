@@ -1,3 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './MB.css';
+
+
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
